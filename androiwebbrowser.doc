@@ -1,0 +1,26 @@
+
+Step 5: – Drag the webview from the widgette section in the palette and drag it to every corner of the screen as shown in the above diagram.
+Step 6: – Now open up the BrowserApp.java document and enter the following statements below.
+WebView webView= (WebView)findViewById(R.id.webView);
+//findViewById returns an instance of View ,which is casted to target class
+
+webView.setWebViewClient(new WebViewClient());
+
+webView.getSettings().setJavaScriptEnabled(true);
+//This statement is used to enable the execution of JavaScript.
+
+webView.setVerticalScrollBarEnabled(false);
+//This statement hides the Vertical scroll bar and does not remove it.
+
+webView.setHorizontalScrollBarEnabled(false);
+//This statement hides the Horizontal scroll bar and does not remove it.
+
+webView.loadUrl(“https://www.google.co.in/”);
+//This statement hides the scroll bar and does not remove it.
+The BrowserApp.java should look something like this:
+
+
+Step 7: – Open the Android Manifest xml file as shown.
+Now in the android manifest xml file, enter the command/statement given below.
+
+run+
